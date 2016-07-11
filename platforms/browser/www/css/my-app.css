@@ -1,0 +1,48 @@
+.imageresize
+{
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+}
+
+.navbar 
+{
+    background:#4876FF;
+}
+
+.toolbar
+{
+    background:#4876FF;
+}
+
+.white-headings
+{
+    color: #fff;
+}
+
+.dock-icons
+{
+    height: auto; 
+    width: auto; 
+    max-width: 35px; 
+    max-height: 35px;
+}
+
+
+.myiframe {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: auto; 
+-webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+border: solid black 1px;
+} 
+.myiframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
