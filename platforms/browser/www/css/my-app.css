@@ -30,19 +30,28 @@
 }
 
 
-.myiframe {
-position: relative;
-padding-bottom: 65.25%;
-padding-top: 30px;
-height: 0;
-overflow: auto; 
--webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
-border: solid black 1px;
-} 
-.myiframe iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
+
+
+.clip-svg {
+		width: 0;
+		height: 0;
+	}
+	
+img {
+		max-width: 100%;
+		height: auto;
+	}
+
+.polygon-clip-hexagon {
+		-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		-webkit-clip-path: url("#polygon-clip-hexagon");
+		clip-path: url("#polygon-clip-hexagon");
+	}
+
+	
+
+
+
+
+
