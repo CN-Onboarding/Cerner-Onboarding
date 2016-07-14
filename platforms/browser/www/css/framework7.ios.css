@@ -4498,8 +4498,8 @@ html.pixel-ratio-3 .picker-modal.smart-select-picker .toolbar:after {
     
   background-image: url(../img/backgroundd.jpg);    
     
-  /*background: #009ACD;*/
-  filter:blur(20px);
+  /*background: #009ACD;
+  filter:blur(20px);*/
     
     
   box-sizing: border-box;

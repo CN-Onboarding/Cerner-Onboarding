@@ -18,7 +18,7 @@ myApp.onPageInit('about', function (page) {
     });
 });
 
-// Generate dynamic page
+/* Generate dynamic page
 var dynamicPageIndex = 0;
 function createContentPage() {
 	mainView.router.loadContent(
@@ -45,4 +45,13 @@ function createContentPage() {
         '</div>'
     );
 	return;
-}
+}*/
+
+
+ 
+/*$$('.panel-left').on('opened', function () {
+    myApp.alert('Left panel opened!');
+});
+$$('.panel-left').on('click', function () {
+    myApp.alert('Left panel is closing!');
+});*/
