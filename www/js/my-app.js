@@ -10,15 +10,64 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
+ 
+$$('.login-screen .list-button').on('click', function () {
+        var username = $$('.login-screen input[name="username"]').val();
+        var password = $$('.login-screen input[name="password"]').val();
+        myApp.alert('Login Accepted, ' + ' Tap OK to continue', function () {
+          myApp.closeModal('.login-screen');
+        });
+      });
+ 
+
+/* Init slider and store its instance in mySwiper variable - BEGIN */
+
+var mySwiper = myApp.swiper('.swiper-container', {
+    pagination:'.swiper-pagination',
+    spaceBetween: 20,
+    slidesPerView: 3
+  });
+
+$$(document).on('pageInit', function (e) {
+  // Do something here when page loaded and initialized
+  
+  var mySwiper = myApp.swiper('.swiper-container', {
+  pagination:'.swiper-pagination',
+  spaceBetween: 20,
+  slidesPerView: 3
+});
+
+})
+
+/* Init slider and store its instance in mySwiper variable - END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Callbacks to run specific code for specific pages, for example for About page:
-myApp.onPageInit('about', function (page) {
+/*myApp.onPageInit('about', function (page) {
     // run createContentPage func after link was clicked
     $$('.create-page').on('click', function () {
         createContentPage();
     });
 });
 
-/* Generate dynamic page
+ Generate dynamic page
 var dynamicPageIndex = 0;
 function createContentPage() {
 	mainView.router.loadContent(
@@ -54,4 +103,5 @@ function createContentPage() {
 });
 $$('.panel-left').on('click', function () {
     myApp.alert('Left panel is closing!');
-});*/
+});*/ 
+   
