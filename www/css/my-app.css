@@ -517,5 +517,7 @@ tr:nth-child(even) {
 }
 
 
-
+.youtube_video{
+    border:2px solid #95CD6A;
+}
 
