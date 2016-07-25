@@ -196,11 +196,19 @@ a.color-white {
 .label-switch.color-white input[type="checkbox"]:checked + .checkbox {
   background-color: #ffffff;
 }
+
+/* NOT ACTIVE BUTTONS START */
+
 .color-white.button:not(.button-fill),
 .color-white.buttons-row .button,
 .theme-white .button:not(.button-fill) {
-  border-color: #ffffff;
+  border-color: #95CD6A;
+  color:#0E94D3; 
+  background-color: #ffffff;
 }
+
+/* NOT ACTIVE BUTTONS END */
+
 html:not(.watch-active-state) .color-white.button:not(.button-fill):active,
 html:not(.watch-active-state) .color-white.buttons-row .button:active,
 html:not(.watch-active-state) .theme-white .button:not(.button-fill):active,
@@ -209,12 +217,18 @@ html:not(.watch-active-state) .theme-white .button:not(.button-fill):active,
 .theme-white .button:not(.button-fill).active-state {
   background-color: rgba(255, 255, 255, 0.15);
 }
+
+/* ACTIVE STATE START */
+
 .color-white.button:not(.button-fill).active,
 .color-white.buttons-row .button.active,
 .theme-white .button:not(.button-fill).active {
-  background-color: #ffffff;
+  background-color: #0E94D3;
   color: #fff;
 }
+
+/* ACTIVE BUTTONS END */
+
 .theme-white .button.button-fill,
 .button.button-fill.color-white {
   background: #ffffff;
@@ -284,11 +298,11 @@ i.icon-bars.theme-white,
 .tabbar.theme-white a.active,
 .theme-white .tabbar a.active i,
 .tabbar.theme-white a.active i {
-  color: #ffffff;
+  color: #0E94D3;
 }
 .theme-white .range-slider input[type="range"]::-webkit-slider-thumb:before,
 .range-slider.theme-white input[type="range"]::-webkit-slider-thumb:before {
-  background-color: #ffffff;
+  background-color: #0E94D3;
 }
 .theme-white .range-slider input[type="range"]::-ms-fill-lower,
 .range-slider.theme-white input[type="range"]::-ms-fill-lower {
@@ -296,7 +310,7 @@ i.icon-bars.theme-white,
 }
 .theme-white label.label-checkbox input[type="checkbox"]:checked + .item-media i.icon-form-checkbox,
 .theme-white label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-checkbox {
-  background-color: #ffffff;
+  background-color: #0E94D3;
 }
 .theme-white label.label-radio input[type="checkbox"]:checked ~ .item-inner,
 .theme-white label.label-radio input[type="radio"]:checked ~ .item-inner {

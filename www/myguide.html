@@ -3,48 +3,35 @@
 <!-- Top Navbar-->
 <div class="navbar">
   <div class="navbar-inner">
-    <!--<div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>-->
-      
+
     <div class="left">
                 <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
             </div>    
       
     <div class="center sliding">myGuide</div>
-    <!--<div class="right">
-      <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
-    </div>-->
-      
-      <div class="right">
-                <a href="#" class="link icon-only"><i class="icon icon-plus">+</i></a>
-                
-                <!--<a href="#"><img class="link top-dock-icons" src="img/heart2.png"></a>-->
-                
-                
-            </div>
-      
+ 
   </div>
 </div>
 <div class="pages">
   <!-- Page, data-page contains page name-->
   <div data-page="myguide" class="page no-swipeback">
       
-    <!--Search Bar-->  
-            <form class="searchbar" data-search-list=".contacts-list" data-search-in=".item-title">
-                <div class="searchbar-input">
-                    <input type="search" placeholder="Search">
-                    <a href="#" class="searchbar-clear"></a>
-                </div>
-                <a href="#" class="searchbar-cancel">Cancel</a>
-            </form>
- 
-              <div class="searchbar-overlay"></div>   
+      <!-- Search Bar -->
+          <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+            <div class="searchbar-input">
+              <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+            </div><a href="#" class="searchbar-cancel">Cancel</a>
+          </form>
+
+          <!-- Search Bar overlay -->
+          <div class="searchbar-overlay"></div>
       
       
     <!-- Scrollable page content-->
     <div class="page-content">
       <div class="content-block-guide">
 
-          <!--<div style="margin-top: -10px;" class="row iphone-onlyy">-->
+          <div style="margin-top: -10px;" class="row iphone-onlyy">
                 
               <div style="background:url(img/cerner-logo.png); background-repeat:no-repeat;" class="col-100 tablet-50 guide-div0">
                     
@@ -85,7 +72,7 @@
               </a>
               
               <a href="yourhealth.html">
-                   <div style="background:url(img/health.jpg); background-size:cover;" class="col-100 tablet-50 guide-div2">
+                   <div style="background:url(img/health.jpg); background-size:cover;" class="col-100 tablet-50 guide-div-last">
                         
                             
                        <div class="guide-content">
@@ -99,67 +86,66 @@
    
               
               
-          <!--  </div>
+          </div>
           
-          
-          
-          
-          
-     
-           		<div class="img-clip-block">
-  			<div class="img-clip-row">
-				    <div class="img-clip-wrap">
-				    </div>
-			  </div>
+          <div class="img-clip-row">
+				    
+           <div style="background:url(img/cerner-logo-big.png); background-repeat:no-repeat;" class="col-100 tablet-50 guide-div0">
+                    
 
-  			<div class="img-clip-row">
-				    <a href="hr-benefits.html" class="img-clip-wrap">
-					      <div class="overlay">
-						        <div class="overlay-content">HR Benefits</div>
-                              
-                              <div class="overlay-content-brief">See what benefits you and your family are entitled to courtesy askHR</div> 
-                              
-					      </div>
-				    </a>
+                    </div>
+              
+         <a href="hr-benefits.html">    
+             <div style="background:url(img/hrbenefits.jpg); background-size:cover;" class="col-100 tablet-50 guide-div2">
+                        
 
-				    <a href="region.html" class="img-clip-wrap">
-	    				  <div class="overlay">			
-                              <div class="overlay-content">&#35;myDubai</div>
-                              
-                             <div class="overlay-content-brief">Learn more about Dubai, the culture, leisure stuff and events all around</div> 
-                              
-                              </div>
-
-					    
-				    </a>
-			  </div>
-
-  			<div class="img-clip-row">
-				    <a href="yourhealth.html" class="img-clip-wrap polygon-clip-rhombus">
-				      	<div class="overlay">
-						        <div class="overlay-content">&#35;yourHealth</div>	
-                            
-                            <div class="overlay-content-brief">Emergency Services, tips and other <br/>information for your well being</div> 
-                            
-					      </div>
-				    </a>
-			  </div>
-		</div> <!-- /img-clip-block 
-
-		<svg class="clip-svg">
-			  <defs>
-				    <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
-					      <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
-				    </clipPath>
-			  </defs>	
-		</svg>-->
-
-          
-       
-          
-       
-          
+                 <div class="guide-content">
+                     <h1>HR Knowledge Base</h1>
+                     <p>See what benefits you and your family <br/>are entitled to courtesy askHR</p>
+                 </div>
    
+                           
+                              
+
+                    </div>
+              </a>
+                        
+                  
+              <a href="region.html">
+                   <div  style="background:url(img/dubai.jpg); background-size:cover;" class="col-100 tablet-50 guide-div2">
+                        
+
+                              
+                       <div class="guide-content">
+                           <h1>&#35;myDubai</h1>
+                           <p>Learn more about Dubai, the culture, <br/>leisure stuff and events all around</p>
+                       </div> 
+                              
+                              
+
+
+                    </div>    
+                        
+              </a>
+              
+              <a href="yourhealth.html">
+                   <div style="background:url(img/health.jpg); background-size:cover;" class="col-100 tablet-50 guide-div-last-big">
+                        
+                            
+                       <div class="guide-content">
+                           <h1>&#35;yourHealth</h1>
+                           <p>Emergency Services, tips and other <br/>information for your well being</p>
+                       </div>
+
+
+                    </div>    
+              </a> 
+          
+          
+          
+          
+          </div>
+
               
         </div>
           

@@ -24,8 +24,8 @@ $$('.login-screen .list-button').on('click', function () {
 
 var mySwiper = myApp.swiper('.swiper-container', {
     pagination:'.swiper-pagination',
-    spaceBetween: 20,
-    slidesPerView: 3
+    spaceBetween: 0,
+    slidesPerView: 1
   });
 
 $$(document).on('pageInit', function (e) {
@@ -33,8 +33,8 @@ $$(document).on('pageInit', function (e) {
   
   var mySwiper = myApp.swiper('.swiper-container', {
   pagination:'.swiper-pagination',
-  spaceBetween: 20,
-  slidesPerView: 3
+  spaceBetween: 0,
+  slidesPerView: 1
 });
 
 })
