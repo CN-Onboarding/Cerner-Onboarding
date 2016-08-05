@@ -22,8 +22,8 @@
     <div class="statusbar-overlay"></div>
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
+    <!-- Left panel with cover effect-->
+    <div class="panel panel-left panel-cover">
         
         
       <div class="content-block">
@@ -35,17 +35,17 @@
           <h1 class="name-headings">Teri Hatcher</h1>
           <p class="name-brief"><i>Cerner ME, Dubai</i></p>
           
-          <a href="settings.html"><h1 class="panell-headings"><img class="dock-icons" src="img/settings.png">Settings</h1></a>
+          <a href="settings.html" class="close-panel"><h1 class="name-headings panell-headings"><img class="dock-icons" src="img/settings.png">&nbsp;&nbsp;Settings</h1></a>
           
           
-          <h1 class="panell-headings"><img class="dock-icons" src="img/heart.png">Favorites</h1>
+          <h1 class="name-headings panell-headings"><img class="dock-icons" src="img/heart.png">&nbsp;&nbsp;Favorites</h1>
           
           
-          <ul class="panell-brief">
-            <li>&#35;myDubai</li>
-            <li>Associate vCard</li>
-            <li>myGuide</li>
-            <li>HR Knowledge Base</li>
+          <ul>
+              <a href="home-1-2.html" class="panel-links close-panel"><li>My First 100 Days</li></a>
+              <a href="yourhealth.html" class="panel-links close-panel"><li>yourHealth</li></a>
+              <a href="region.html" class="panel-links close-panel"><li>#myDubai</li></a>
+              <a href="hr-benefits.html" class="panel-links close-panel"><li>HR Knowledge Base</li></a>
           </ul>
           
           </div>
@@ -55,9 +55,9 @@
     
       
     <!-- Views-->
-    <div class="views theme-white">
+    <div class="views theme-white tabs navbar-fixed toolbar-fixed">
       <!-- Your main view, should have "view-main" class-->
-      <div class="view view-main">
+      <div id="view-1" class="view view-main tab active">
           
           
           
@@ -78,7 +78,7 @@
           
           
         <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
-        <div class="pages navbar-through toolbar-through">
+        <div class="pages">
           <!-- Page, data-page contains page name-->
           <div data-page="index" class="page no-swipeback">
          
@@ -103,7 +103,7 @@
                     
                     <h1 style="margin-left:15px; margin-right:15px;">Welcome Teri !</h1>
                     <h3 style="margin-left:15px; margin-right:15px;">Tap on Level 1 to get started with your Onboarding Journey</h3>
-                    <p style="margin-left:15px; margin-right:15px;">Additional levels will unlock as you progress through your 100 day plan and understand more about Cerner. To view a quick tutorial on how to use the app, tap on the image above to learn more</p>
+                    <p style="margin-left:15px; margin-right:15px;">Additional levels will unlock as you progress through your 100 day plan and understand more about Cerner. Welcome to Cerner and we wish you an exciting journey ahead!</p>
               
          <a href="level-1.html">    
              <div style="background:url(img/level.jpg); background-size:cover;" class="col-100 tablet-50 index-div">
@@ -243,53 +243,526 @@
             </div>
           </div>
       
-          
-          
-          
-        <!-- Bottom Toolbar-->
-    <div class="toolbar tabbar tabbar-labels">
-        <div class="toolbar-inner">
+        
+      </div>  <!-- TAB 1 END --> 
+        
+      
+        
+      <!-- Second view (for second wrap)-->
+      <div id="view-2" class="view tab">
+        <!-- We can make with view with navigation, let's add Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
             
-            <a href="myguide.html" class="bat-link active">
-                <!--<i class="icon icon-form-email"></i>-->
-                <img class="dock-icons" src="img/guide.png">
-                <span class="tabbar-label">myGuide</span>
-           
-            </a>
-            
-            
-            <a href="checklist.html" class="bat-link">
-                <img class="dock-icons" src="img/checklist.png">
-                <span class="tabbar-label">Checklist</span>
-           
-            </a>
-            
-            
-            <a href="index.html" class="bat-link">
-                <img class="dock-icons" src="img/home.png">
-                <span class="tabbar-label">Home</span>
-           
-            </a>
-
-            <a href="mycalendar.html" class="bat-link">
-                <img class="dock-icons" src="img/calendar.png">
-                <span class="tabbar-label">myCalendar</span>
-                
-            </a>
-
-            <a href="profile.html" class="bat-link">
-                <img class="dock-icons" src="img/profile.png">
-                
-           <span class="tabbar-label">Profile</span>
-               
-            </a>
+              <div class="center sliding">Checklist</div>
+              
+          </div>
         </div>
+        <div class="pages">
+          <div data-page="index-2" class="page">
+            <div class="page-content">
+              
+                
+                <div class="content-block">
+    <!-- Buttons row as tabs controller -->
+    <div class="buttons-row">
+      <!-- Link to 1st tab, active -->
+      <a href="#tab1" class="tab-link active button">Your Checklist</a>
+      <!-- Link to 2nd tab -->
+      <a href="#tab2" class="tab-link button">Manager's Checklist</a>
     </div>
-    <!-- toolbar end -->
+  </div>
+  <!-- Tabs, tabs wrapper -->
+  <div class="tabs">
+    <!-- Tab 1, active by default -->
+    <div id="tab1" class="tab active">
+      <div class="content-block">
+        
+          <div class="content-block-title">Tap on an item to mark as completed</div>
+            <div class="list-block media-list">
+              <ul>
+                <li>
+                  <label class="label-checkbox item-content">
+                    <input type="checkbox" name="my-checkbox">
+                    <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Met my Manager</div>
+                        <div class="item-after">Day 1</div>
+                      </div>
+                      <!--<div class="item-subtitle"></div>-->
+                      <div class="item-text">Some additional text if needed</div>
+                    </div>
+                  </label>
+                </li>
+                  
+                <li>
+                  <label class="label-checkbox item-content">
+                    <input type="checkbox" name="my-checkbox">
+                    <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Met the other Manager</div>
+                        <div class="item-after">Day 2</div>
+                      </div>
+                      <!--<div class="item-subtitle"></div>-->
+                      <div class="item-text">Some additional text if needed</div>
+                    </div>
+                  </label>
+                </li>
+                  
+                <li>
+                  <label class="label-checkbox item-content">
+                    <input type="checkbox" name="my-checkbox">
+                    <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Met another Manager</div>
+                        <div class="item-after">Day 3</div>
+                      </div>
+                      <!--<div class="item-subtitle"></div>-->
+                      <div class="item-text">Some additional text if needed</div>
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          
+          
+          
+          
+          
+          
+          
+          
+      </div>
+    </div>
+    <!-- Tab 2 -->
+    <div id="tab2" class="tab">
+      <div class="content-block">
+        
+          <div class="content-block-title">Check your manager's checklist</div>
+            <div class="list-block media-list">
+              <ul>
+                <li>
+                  <label class="label-checkbox item-content">
+                    <input type="checkbox" name="my-checkbox">
+                    <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Assigned WBT's</div>
+                        <div class="item-after">Day 1</div>
+                      </div>
+                      <!--<div class="item-subtitle"></div>-->
+                      <div class="item-text">Some additional text if needed</div>
+                    </div>
+                  </label>
+                </li>
+                  
+                <li>
+                  <label class="label-checkbox item-content">
+                    <input type="checkbox" name="my-checkbox">
+                    <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Showed uCern Tutorials</div>
+                        <div class="item-after">Day 2</div>
+                      </div>
+                      <!--<div class="item-subtitle"></div>-->
+                      <div class="item-text">Some additional text if needed</div>
+                    </div>
+                  </label>
+                </li>
+                  
+                <li>
+                  <label class="label-checkbox item-content">
+                    <input type="checkbox" name="my-checkbox">
+                    <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Met with Associate</div>
+                        <div class="item-after">Day 3</div>
+                      </div>
+                      <!--<div class="item-subtitle"></div>-->
+                      <div class="item-text">Some additional text if needed</div>
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      </div>
+    </div>
+  </div>
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+          </div>
+        </div>
       </div>
         
         
+      <!-- TAB 3 -->  
+        
+       <div id="view-3" class="view tab">
+        <div class="navbar">
+          <div class="navbar-inner">
+            
+              
+              <div class="center sliding">myGuide</div>
+              
+          </div>
+        </div>
+        <div class="pages">
+          <div data-page="index-3" class="page">
+            
+              <!-- Search Bar -->
+              <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+                <div class="searchbar-input">
+                  <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+                </div><a href="#" class="searchbar-cancel">Cancel</a>
+              </form>
+
+              <!-- Search Bar overlay -->
+              <div class="searchbar-overlay"></div>
+              
+              
+              
+             <!-- Scrollable page content-->
+                <div class="page-content">
+                  <div class="content-block-guide">
+
+                      <div style="margin-top: -10px;" class="row iphone-onlyy">
+
+                          <div style="background:url(img/cerner-logo.png); background-repeat:no-repeat;" class="col-100 tablet-50 guide-div0">
+
+
+                                </div>
+
+                     <a href="hr-benefits.html">    
+                         <div style="background:url(img/hrbenefits.jpg); background-size:cover;" class="col-100 tablet-50 guide-div">
+
+
+                             <div class="guide-content">
+                                 <h1>HR Knowledge Base</h1>
+                                 <p>See what benefits you and your family <br/>are entitled to courtesy askHR</p>
+                             </div>
+
+
+
+
+                                </div>
+                          </a>
+
+
+                          <a href="region.html">
+                               <div  style="background:url(img/dubai.jpg); background-size:cover;" class="col-100 tablet-50 guide-div">
+
+
+
+                                   <div class="guide-content">
+                                       <h1>&#35;myDubai</h1>
+                                       <p>Learn more about Dubai, the culture, <br/>leisure stuff and events all around</p>
+                                   </div> 
+
+
+
+
+                                </div>    
+
+                          </a>
+
+                          <a href="yourhealth.html">
+                               <div style="background:url(img/health.jpg); background-size:cover;" class="col-100 tablet-50 guide-div-last">
+
+
+                                   <div class="guide-content">
+                                       <h1>&#35;yourHealth</h1>
+                                       <p>Emergency Services, tips and other <br/>information for your well being</p>
+                                   </div>
+
+
+                                </div>    
+                          </a>       
+
+
+
+                      </div>
+
+                      <div class="img-clip-row">
+
+                       <div style="background:url(img/cerner-logo-big.png); background-repeat:no-repeat;" class="col-100 tablet-50 guide-div0">
+
+
+                                </div>
+
+                     <a href="hr-benefits.html">    
+                         <div style="background:url(img/hrbenefits.jpg); background-size:cover;" class="col-100 tablet-50 guide-div2">
+
+
+                             <div class="guide-content">
+                                 <h1>HR Knowledge Base</h1>
+                                 <p>See what benefits you and your family <br/>are entitled to courtesy askHR</p>
+                             </div>
+
+
+
+
+                                </div>
+                          </a>
+
+
+                          <a href="region.html">
+                               <div  style="background:url(img/dubai.jpg); background-size:cover;" class="col-100 tablet-50 guide-div2">
+
+
+
+                                   <div class="guide-content">
+                                       <h1>&#35;myDubai</h1>
+                                       <p>Learn more about Dubai, the culture, <br/>leisure stuff and events all around</p>
+                                   </div> 
+
+
+
+
+                                </div>    
+
+                          </a>
+
+                          <a href="yourhealth.html">
+                               <div style="background:url(img/health.jpg); background-size:cover;" class="col-100 tablet-50 guide-div-last-big">
+
+
+                                   <div class="guide-content">
+                                       <h1>&#35;yourHealth</h1>
+                                       <p>Emergency Services, tips and other <br/>information for your well being</p>
+                                   </div>
+
+
+                                </div>    
+                          </a> 
+
+
+
+
+                      </div>
+
+
+                    </div>
+
+                </div> 
+              
+              
+              
+              
+              
+              
+              
+          </div>
+        </div>
+      </div>
+        
+        
+        
+        
+        
+    <!-- TAB 4 --> 
+        
+      <div id="view-4" class="view tab">
+        <div class="pages">
+          <div data-page="index-4" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                 
+                  <div class="center sliding">Profile</div>
+              
+                  
+              </div>
+            </div>
+              
+              
+              
+            <div class="page-content">
+              
+                
+                <div class="content-block">
+        
+
+      
+          <div class="content-block">
+                   <!-- <p>Grid cells have different size on Phone/Tablet</p>-->
+              <div class="iphone-profile">
+                    <div class="row">
+                      
+
+                        <div style="background:url(img/business-woman.jpg); background-size:cover;" class="col-100 tablet-100 profile-div">
+
+                        </div>
+                        
+                       
+                        
+                    </div>
+              
+              
+ 
+                    <div class="row">
+                        
+                        
+                       <div class="col-100 tablet-100 profile-main-cols">
+
+                           <h1 class="first-name">Teri</h1>
+                           <h1 class="last-name">Hatcher</h1>
+                           
+                           <br/>
+                           
+                           <img style="width:50px;" src="img/earth.png">
+                           <p class="location-name">Cerner ME, Dubai</p>
+                           
+                           <p class="whats-happening-today"><i>What's happening today?</i></p>
+
+
+                        </div>    
+                        
+                        
+                      <div class="col-100 tablet-100 profile-cols">
+                      
+                          <h1><u>My Achievements</u></h1>
+                          <img style="width:200px;" src="img/awards_combo_logo.jpg">
+                        
+                        
+                      </div>
+                      <div class="col-100 tablet-100 profile-cols">
+                        
+                          <h1><u>Quick Links</u></h1>
+                        <img style="width:300px;" src="img/links.tiff">  
+                          
+                      </div>
+                      <div class="col-100 tablet-100 profile-cols">
+                        
+                        <h1><u>My Progress</u></h1>
+                        <img style="width:300px;" src="img/progress.tiff">
+                        
+                        
+                      </div>
+                      <div class="col-100 tablet-100 profile-cols">
+                        
+                          <h1><u>Cerner on Social Media</u></h1>
+                          <img id="social" src="img/socialicons.png">
+                        
+                        
+                      </div>
+                    </div>
+                  
+                  
+              </div>
+              
+              
+              <div class="ipad-profile">
+                    <div class="row">
+                        <div class="col-30 tablet-50 profile-main-cols">
+
+                           <h1 class="first-name">Teri</h1>
+                           <h1 class="last-name">Hatcher</h1>
+                           
+                           <br/>
+                           
+                           <img style="width:50px;" src="img/earth.png">
+                           <p class="location-name">Cerner ME, Dubai</p>
+                           
+                           <p class="whats-happening-today"><i>What's happening today?</i></p>
+
+
+
+
+                        </div>
+
+
+
+
+                        <div style="background:url(img/business-woman.jpg); background-size:cover;" class="col-70 tablet-50 profile-div">
+
+                        </div>
+                        
+                    </div>
+              
+              
+ 
+                    <div class="row">
+                      <div class="col-100 tablet-100 profile-cols">
+                      
+                          <h1><u>My Achievements</u></h1>
+                          <img style="width:300px;" src="img/awards_combo_logo.jpg">
+                        
+                      </div>
+                      <div class="col-50 tablet-50 profile-cols">
+                        
+                          <h1><u>Quick Links</u></h1>
+                         <img style="width:300px;" src="img/links.tiff">
+                          
+                      </div>
+                      <div class="col-50 tablet-50 profile-cols">
+                        
+                          <h1><u>My Progress</u></h1>
+                        <img style="width:300px;" src="img/progress.tiff">
+                        
+                        
+                      </div>
+                      <div class="col-100 tablet-100 profile-cols">
+                        
+                          <h1><u>Cerner on Social Media</u></h1>
+                          <img id="social" src="img/socialicons.png">
+                        
+                        
+                      </div>
+                    </div>
+                  
+                  
+              </div>
+              
+          
+      </div>
     </div>
+                
+                
+                
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>  
+        
+
+        
+        <!-- Bottom Toolbar-->
+    <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner"><a href="#view-1" class="tab-link active"> <i class="icon tabbar-icon-1"></i><span class="tabbar-label active">Home</span></a>
+            
+        <a href="#view-2" class="tab-link"><i class="icon tabbar-icon-2"></i><span class="tabbar-label">Checklist</span></a>
+            
+        <a href="#view-3" class="tab-link"> <i class="icon tabbar-icon-3"></i><span class="tabbar-label">myGuide</span></a>
+            
+        <a href="#view-4" class="tab-link"> <i class="icon tabbar-icon-4"></i><span class="tabbar-label">Profile</span></a></div>
+      </div>
+    <!-- toolbar end -->
+        
+        
+        
+    </div>  <!-- VIEW MAIN END -->
     
     <!--Login Modal -->
     <div class="login-screen modal-in">
@@ -297,7 +770,7 @@
             <div class="page">
             <div style="background: #0E94D3; padding-top: 100px" class="page-content login-screen-content">
             
-            <div class="login-screen-title"><img src="img/cerner-logo-vertical.png"></div>
+            <div class="login-screen-title"><img src="img/main-logo.png"></div>
             
             <form>
             <div class="list-block">
