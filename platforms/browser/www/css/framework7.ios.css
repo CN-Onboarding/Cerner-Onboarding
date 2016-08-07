@@ -1507,10 +1507,10 @@ html.pixel-ratio-3 .toolbar:before {
     min-width: 105px;
   }
   .tabbar-labels {
-    height: 56px;
+    height: 50px;
   }
   .tabbar-labels span.tabbar-label {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 .navbar-from-right-to-center .left,
