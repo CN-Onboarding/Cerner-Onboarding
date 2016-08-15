@@ -2139,6 +2139,10 @@ i.icon.icon-plus {
   color: #6d6d72;
   box-sizing: border-box;
 }
+
+
+
+
 .content-block-title {
   position: relative;
   overflow: hidden;
@@ -2148,9 +2152,14 @@ i.icon.icon-plus {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1;
-  color: #6d6d72;
+  color: #95CD6A;
   margin: 35px 15px 10px;
 }
+
+
+
+
+
 .content-block-title + .list-block,
 .content-block-title + .content-block,
 .content-block-title + .card {
